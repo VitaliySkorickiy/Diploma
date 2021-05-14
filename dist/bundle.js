@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ \"./src/modules/modal.js\");\n\n // *****  Modal  ********\n\n(0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.default)(); // *** Slider ***\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n//# sourceURL=webpack://Diploma/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ \"./src/modules/modal.js\");\n\n // *****  Modal  ********\n\n(0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.default)(); // *** Slider ***\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_0__.default)(); // *****   Scroll   *******\n\nscroll();\nconsole.log(1);\nconsole.log(1);\nconsole.log(1);\nconsole.log(1);\n\n//# sourceURL=webpack://Diploma/./src/index.js?");
 
 /***/ }),
 
