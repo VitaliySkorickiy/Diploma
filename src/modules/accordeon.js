@@ -1,6 +1,4 @@
 const accordeon = () => {
-  console.log(123);
-
   const buttons = document.querySelectorAll('.title');
 
   buttons.forEach((btn) => {
@@ -10,6 +8,7 @@ const accordeon = () => {
           btn.parentElement.classList.remove('active');
           btn.nextElementSibling.style.display = 'none';
         });
+
         this.parentElement.classList.add('active');
         this.nextElementSibling.style.display = 'block';
       }

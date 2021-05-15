@@ -1,11 +1,13 @@
 const scroll = () => {
+  const elemTop = document.querySelector('.up');
+  if (document.documentElement.scrollTop > 600) {
+    elemTop.classList.add('animated', 'fadeIn');
+  }
+  elemTop.addEventListener('click', () => {
+    scrollTarget('body');
+  });
+
   window.addEventListener('scroll', () => {
-    const elemTop = document.querySelector('.up');
-
-    elemTop.addEventListener('click', () => {
-      scrollTarget('body');
-    });
-
     if (document.documentElement.scrollTop > 600) {
       elemTop.classList.add('animated', 'fadeIn');
       elemTop.classList.remove('fadeOut');
