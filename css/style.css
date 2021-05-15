@@ -1237,6 +1237,21 @@ video#video_background {
 	opacity: 1;
 }
 
+/* **************************** */
+
+.btnServices {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 48px;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -24px;
+	padding: 10px 0;
+	z-index: 10;
+}
+
 .services-section .element .img-wrapper:before {
 	content: "Оформить заявку";
 	display: block;
@@ -1251,7 +1266,7 @@ video#video_background {
 	-o-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
 	margin-top: -24px;
-	z-index: 2;
+	z-index: 5;
 	opacity: 0;
 	color: #fff;
 	padding: 10px 0;
@@ -1259,6 +1274,8 @@ video#video_background {
 	text-transform: uppercase;
 	border: 2px solid #fff;
 }
+
+/* ***************************** */
 
 .services-section .element:hover .img-wrapper:before {
 	opacity: 1;

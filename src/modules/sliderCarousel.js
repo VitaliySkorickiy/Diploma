@@ -6,8 +6,7 @@ const sliderCarousel = () => {
     slidesField = slidesWrap.querySelector('.services-carousel'),
     width = window.getComputedStyle(slidesWrap).width;
 
-  let slideIndex = 1,
-    offset = 0;
+  let offset = 0;
 
   slidesField.style.width = 200 + '%';
   slidesField.style.display = 'flex';

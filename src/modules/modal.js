@@ -3,8 +3,19 @@ const modal = () => {
     modalOverlay = document.querySelector('.modal-overlay'),
     callbackBtn = document.querySelector('.callbackBtn'),
     modalClose = modalCallback.querySelector('.modal-close'),
-    buttonServices = document.querySelector('.button-services');
+    buttonServices = document.querySelector('.button-services'),
+    servicesElements = document.querySelector('.services-elements'),
+    btnServices = document.querySelectorAll('.btnServices');
   /**/
+
+  servicesElements.addEventListener('click', (e) => {
+    const target = e.target;
+
+    if (target.matches('.btnServices')) {
+      modalCallback.style.display = 'block';
+      modalOverlay.style.display = 'block';
+    }
+  });
 
   const openClose = (btn, modal, background, display) => {
     btn.addEventListener('click', () => {

@@ -28,10 +28,12 @@ const scroll = () => {
   });
 
   const scrollTarget = (target) => {
-    document.querySelector(target).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    if (target) {
+      document.querySelector(target).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 };
 export default scroll;
