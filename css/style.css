@@ -929,6 +929,11 @@ hr.white {
 	height: 450px;
 }
 
+.top-slider .text {
+	font-size: 30px;
+	line-height: 1.6;
+}
+
 .top-slider .item {
 	overflow: hidden;
 	height: 450px;
@@ -1014,7 +1019,7 @@ video#video_background {
 	.top-slider {
 		height: 520px;
 	}
-	.top-slider .table {
+	/* .top-slider .table {
 		opacity: 0;
 		visibility: hidden;
 		-webkit-transform: scale(1.5);
@@ -1024,8 +1029,8 @@ video#video_background {
 		-webkit-transition: 0.5s;
 		-o-transition: 0.5s;
 		transition: 0.5s;
-	}
-	.top-slider .table.active {
+	} .active*/
+	.top-slider .table {
 		webkit-transform: scale(1);
 		-ms-transform: scale(1);
 		-o-transform: scale(1);

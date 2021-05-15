@@ -6,7 +6,6 @@ const sliderTop = () => {
 
   const sliderPlay = () => {
     itemSlider.forEach((slider) => {
-      slider.classList.remove('animated', 'fadeIn');
       slider.style.display = 'none';
     });
 
@@ -15,11 +14,9 @@ const sliderTop = () => {
     if (currentSlide >= itemSlider.length) {
       currentSlide = 0;
     }
-
-    itemSlider[currentSlide].classList.add('animated', 'fadeIn');
     itemSlider[currentSlide].style.display = 'block';
   };
-
   interval = setInterval(sliderPlay, 3000);
 };
+
 export default sliderTop;
