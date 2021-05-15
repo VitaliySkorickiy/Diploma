@@ -4,6 +4,7 @@ const modal = () => {
     callbackBtn = document.querySelector('.callbackBtn'),
     modalClose = modalCallback.querySelector('.modal-close'),
     buttonServices = document.querySelector('.button-services');
+  /**/
 
   const openClose = (btn, modal, background, display) => {
     btn.addEventListener('click', () => {

@@ -136,7 +136,8 @@
 
           <div class="services-elements">
             <div class="row services-carousel">
-              <div class="col-sm-6 col-md-4">
+              <!-- *** -->
+              <div class="slides">
                 <div class="element relative">
                   <a class="absolute fancyboxModal" href="#application" data-application="Аварийный выезд"></a>
                   <div class="img-wrapper">
@@ -152,7 +153,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+
+              <div class="slides">
                 <div class="element relative">
                   <a
                     class="absolute fancyboxModal"
@@ -172,7 +174,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+
+              <div class="slides">
                 <div class="element relative">
                   <a
                     class="absolute fancyboxModal"
@@ -192,7 +195,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+
+              <div class="slides">
                 <div class="element relative">
                   <a class="absolute fancyboxModal" href="#application" data-application="Замена электросчетчика"></a>
                   <div class="img-wrapper">
@@ -208,7 +212,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+
+              <div class="slides">
                 <div class="element relative">
                   <a class="absolute fancyboxModal" href="#application" data-application="Установка, замена люстры"></a>
                   <div class="img-wrapper">
@@ -224,7 +229,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
+
+              <div class="slides">
                 <div class="element relative">
                   <a class="absolute fancyboxModal" href="#application" data-application="Установка светильников"></a>
                   <div class="img-wrapper">
@@ -240,6 +246,7 @@
                   </div>
                 </div>
               </div>
+              <!-- ** -->
             </div>
           </div>
 
@@ -487,7 +494,7 @@
             <div class="col-sm-4">
               <div class="element element1">
                 <div class="icon hidden-sm"><img src="images/address-icon.png" /></div>
-                г. Ваш город, <br />
+                г. Симферополь, <br />
                 ул. Ленина д. 3, офис 302
               </div>
             </div>
@@ -518,12 +525,12 @@
         <script type="text/javascript">
           ymaps.ready(function () {
             var mapexMap = new ymaps.Map('mapexMap', {
-                center: [44.84373337182117, 37.65565927116387], // центр карты
-                zoom: 16, // масштаб
+                center: [44.951593, 34.104082], // центр карты
+                zoom: 18, // масштаб
                 controls: ['zoomControl'],
               }),
               myPlacemark = new ymaps.Placemark(
-                [44.84373337182117, 37.65565927116387], // координаты маркера
+                [44.951593, 34.104082], // координаты маркера
                 {
                   iconContent: '',
                   balloonContentBody: 'г. Симферополь, Проспект Дзержинского д. 211',
