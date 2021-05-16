@@ -4,8 +4,7 @@ const modal = () => {
     callbackBtn = document.querySelector('.callbackBtn'),
     modalClose = modalCallback.querySelector('.modal-close'),
     buttonServices = document.querySelector('.button-services'),
-    servicesElements = document.querySelector('.services-elements'),
-    btnServices = document.querySelectorAll('.btnServices');
+    servicesElements = document.querySelector('.services-elements');
   /**/
 
   servicesElements.addEventListener('click', (e) => {

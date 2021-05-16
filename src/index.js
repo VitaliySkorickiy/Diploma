@@ -3,18 +3,24 @@ import modal from './modules/modal';
 import scroll from './modules/scroll';
 import accordeon from './modules/accordeon';
 import sliderCarousel from './modules/sliderCarousel';
+import form from './modules/form';
 
-// *****  Modal  ********
-modal();
+window.addEventListener('DOMContentLoaded', () => {
+  // *****  Modal  ********
+  modal();
 
-// *** Slider ***
-sliderTop();
+  // *** Slider ***
+  sliderTop();
 
-// *****   Scroll   *******
-scroll();
+  // *****   Scroll   *******
+  scroll();
 
-// *****  accordeon *****
-accordeon();
+  // *****  accordeon *****
+  accordeon();
 
-// ***** sliderCarousel   ****
-sliderCarousel();
+  // ***** sliderCarousel   ****
+  sliderCarousel();
+
+  // *********   form  ******
+  form();
+});
