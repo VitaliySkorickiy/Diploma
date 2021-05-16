@@ -38,7 +38,7 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ \"./src/modules/modal.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scroll */ \"./src/modules/scroll.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/modules/accordeon.js\");\n/* harmony import */ var _modules_sliderCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderCarousel */ \"./src/modules/sliderCarousel.js\");\n/* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/form */ \"./src/modules/form.js\");\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  // *****  Modal  ********\n  (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.default)(); // *** Slider ***\n\n  (0,_modules_slider__WEBPACK_IMPORTED_MODULE_0__.default)(); // *****   Scroll   *******\n\n  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_2__.default)(); // *****  accordeon *****\n\n  (0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_3__.default)(); // ***** sliderCarousel   ****\n\n  (0,_modules_sliderCarousel__WEBPACK_IMPORTED_MODULE_4__.default)(); // *********   form  ******\n\n  (0,_modules_form__WEBPACK_IMPORTED_MODULE_5__.default)();\n});\n\n//# sourceURL=webpack://Diploma/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ \"./src/modules/modal.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scroll */ \"./src/modules/scroll.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/modules/accordeon.js\");\n/* harmony import */ var _modules_sliderCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderCarousel */ \"./src/modules/sliderCarousel.js\");\n/* harmony import */ var _modules_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/form */ \"./src/modules/form.js\");\n/* harmony import */ var _modules_validForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/validForm */ \"./src/modules/validForm.js\");\n\n\n\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  // *****  Modal  ********\n  (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__.default)(); // *** Slider ***\n\n  (0,_modules_slider__WEBPACK_IMPORTED_MODULE_0__.default)(); // *****   Scroll   *******\n\n  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_2__.default)(); // *****  accordeon *****\n\n  (0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_3__.default)(); // ***** sliderCarousel   ****\n\n  (0,_modules_sliderCarousel__WEBPACK_IMPORTED_MODULE_4__.default)(); // *********   form  ******\n\n  (0,_modules_form__WEBPACK_IMPORTED_MODULE_5__.default)(); // **********   validForm  *******\n\n  (0,_modules_validForm__WEBPACK_IMPORTED_MODULE_6__.default)();\n});\n\n//# sourceURL=webpack://Diploma/./src/index.js?");
 
 /***/ }),
 
@@ -105,6 +105,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar sliderCarousel = function sliderCarousel() {\n  var slides = document.querySelectorAll('.slides'),\n      slidesWrap = document.querySelector('.services-elements'),\n      next = document.querySelector('.arrow-right'),\n      prev = document.querySelector('.arrow-left'),\n      slidesField = slidesWrap.querySelector('.services-carousel'),\n      width = window.getComputedStyle(slidesWrap).width;\n  var offset = 0;\n  slidesField.style.width = 200 + '%';\n  slidesField.style.display = 'flex';\n  slidesField.style.transition = '0.5s all';\n  slidesWrap.style.overflow = 'hidden';\n  slides.forEach(function (slid) {\n    slid.style.width = width;\n  });\n  next.addEventListener('click', function () {\n    if (offset == +width.slice(0, width.length - 2)) {\n      offset = 0;\n    } else {\n      offset += +width.slice(0, width.length - 2);\n    }\n\n    slidesField.style.transform = \"translateX(-\".concat(offset, \"px)\");\n  });\n  prev.addEventListener('click', function () {\n    if (offset == 0) {\n      offset = +width.slice(0, width.length - 2);\n    } else {\n      offset -= +width.slice(0, width.length - 2);\n    }\n\n    slidesField.style.transform = \"translateX(-\".concat(offset, \"px)\");\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sliderCarousel);\n\n//# sourceURL=webpack://Diploma/./src/modules/sliderCarousel.js?");
+
+/***/ }),
+
+/***/ "./src/modules/validForm.js":
+/*!**********************************!*\
+  !*** ./src/modules/validForm.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar validForm = function validForm() {\n  var name = document.getElementById('name'),\n      tel = document.getElementById('tel');\n  console.log(tel);\n  name.addEventListener('input', function () {\n    name.value = name.value.replace(/[^\\а-яА-ЯёЁ\\ ]/g, '').trim();\n  });\n  tel.addEventListener('input', function () {\n    tel.value = tel.value.replace(/[^0-9\\+]/gi, '').trim();\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (validForm);\n\n//# sourceURL=webpack://Diploma/./src/modules/validForm.js?");
 
 /***/ }),
 
@@ -506,7 +517,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d38b0ba5ffe0ba4a7779")
+/******/ 		__webpack_require__.h = () => ("7492219299f393990192")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

@@ -4,6 +4,7 @@ import scroll from './modules/scroll';
 import accordeon from './modules/accordeon';
 import sliderCarousel from './modules/sliderCarousel';
 import form from './modules/form';
+import validForm from './modules/validForm';
 
 window.addEventListener('DOMContentLoaded', () => {
   // *****  Modal  ********
@@ -23,4 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // *********   form  ******
   form();
+  // **********   validForm  *******
+  validForm();
 });

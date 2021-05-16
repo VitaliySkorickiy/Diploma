@@ -210,6 +210,10 @@ a.absolute {
 	z-index: 10;
 }
 
+.status {
+	font-size: 30px;
+}
+
 .button {
 	display: inline-block;
 	text-decoration: none !important;
