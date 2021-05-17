@@ -3,10 +3,11 @@ const form = () => {
     inputs = form.querySelectorAll('input[type="text"]');
 
   const message = {
-    loading: 'Загрузка...',
-    success: 'Мы с вами свяжемся',
-    failure: 'Что-то пошло не так...',
+    loading: 'идет отправка',
+    success: 'отправлено',
+    failure: 'ошибка',
   };
+  const statusMessage = document.createElement('div');
 
   const postData = (formData) => {
     return fetch('server.php', {
@@ -21,11 +22,12 @@ const form = () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let statusMessage = document.createElement('div');
     statusMessage.classList.add('status');
     form.appendChild(statusMessage);
 
     const formData = new FormData(form);
+
+    statusMessage.textContent = message.loading;
 
     let body = {};
     formData.forEach((val, key) => {
