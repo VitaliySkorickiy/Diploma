@@ -1,6 +1,8 @@
 const form = () => {
   const form = document.querySelector('.modal-callback'),
-    inputs = form.querySelectorAll('input[type="text"]');
+    inputs = form.querySelectorAll('input[type="text"]'),
+    modalCallback = document.querySelector('.modal-callback'),
+    modalOverlay = document.querySelector('.modal-overlay');
 
   const message = {
     loading: 'идет отправка',
@@ -50,6 +52,8 @@ const form = () => {
 
         setTimeout(() => {
           statusMessage.remove();
+          modalCallback.style.display = 'none';
+          modalOverlay.style.display = 'none';
         }, 5000);
       });
   });
